@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   $("#text").val(memory_verse);
 
-  getBibleText(memory_verse, "nasb");
+  getBibleText(memory_verse, "asv");
 
 
 });
@@ -46,7 +46,7 @@ function getBibleText(ref, ver) {
   var verse_split;
 
   jQuery.ajax({
-    url:'https://getbible.net/json',
+    url:'http://getbible.net/json',
     dataType: 'jsonp',
     data: 'p='+ref+'&v='+ver,
     jsonp: 'getbible',
