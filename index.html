@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <script src="/libraries/jquery.min.js"></script>
+         <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/libraries\bootstrap-3.3.7-dist\js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/libraries\bootstrap-3.3.7-dist\css/bootstrap.min.css">
+        <script type="text/javascript" src="./script.js"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+
+    </head>
+    <title>
+        Memorization Helper
+    </title>
+
+    <body>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">BibleMemory.online</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="#">Bible Memory</a></li>
+            <li><a href="/beta">Beta Page</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <h1>Memorization Helper</h1>
+
+        <div style="padding-right: 20px; padding-left: 20px">
+          <input type="radio" name="top" value="auto" checked="true"> Auto Generate by Scripture Reference:
+          <input type="text" id="text" onkeydown="if(event.keyCode==13) doThatThing()"> Version:
+          <select id="sel">
+              <option value="nasb">New American Standard</option>
+              <option value="kjv">King James Version</option>
+              <option value="byzantine">Greek New Testament</option>
+              <option value="aleppo">Hebrew Old Testament</option>
+          </select> <br> <br>
+
+          <input type="radio" name="top" value="man"> Enter text manually:
+
+          <textarea id="textarea" rows="4" cols="50"></textarea> <br> <br>
+
+
+          <div class="center"><input type="checkbox" name="projmode"> Projector Mode <br><button id="button" onclick="myGenerate()">Generate</button></div>
+
+          <hr>
+
+          <div style="text-align:center;" id="div1" class="center"><input id="num" type="number" min="1" max="99" value="5">&nbsp;<button onClick="blankWords()">Blank Words</button></div>
+          <div id="loading">Loading...</div> <br>
+
+          <div id="scripture"></div> <br>
+
+          <div class="center"><button onClick="blankWords()">Blank Words</button></div>
+
+        </div>
+
+
+
+
+
+        <!-- Start of StatCounter Code for Default Guide -->
+        <script type="text/javascript">
+        var sc_project=10830445;
+        var sc_invisible=1;
+        var sc_security="8b09aa23";
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+        document.write("<sc"+"ript type='text/javascript' src='" +
+        scJsHost+
+        "statcounter.com/counter/counter.js'></"+"script>");
+        </script>
+        <noscript><div class="statcounter"><a title="hit counter"
+        href="http://statcounter.com/" target="_blank"><img
+        class="statcounter"
+        src="http://c.statcounter.com/10830445/0/8b09aa23/1/"
+        alt="hit counter"></a></div></noscript>
+        <!-- End of StatCounter Code for Default Guide -->
+    </body>
+</html>
