@@ -46,7 +46,7 @@ function getBibleText(ref, ver) {
   var verse_split;
 
   jQuery.ajax({
-    url:'http://getbible.net/json',
+    url:'https://getbible.net/json',
     dataType: 'jsonp',
     data: 'p='+ref+'&v='+ver,
     jsonp: 'getbible',
